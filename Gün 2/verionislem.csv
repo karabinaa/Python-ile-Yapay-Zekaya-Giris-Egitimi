@@ -1,0 +1,21 @@
+ID,Yaş,Maaş,Şehir,Çalışma Saati,Memnuniyet,Departman,Deneyim Yılı
+1,25.0,3000.0,İstanbul,40,3,IT,1
+2,30.0,4500.0,Ankara,45,4,Muhasebe,5
+3,35.0,5000.0,İzmir,50,5,Pazarlama,10
+4,,7000.0,İstanbul,38,2,IT,3
+5,40.0,3200.0,Ankara,42,3,Muhasebe,7
+6,50.0,8000.0,İzmir,55,5,Pazarlama,12
+7,28.0,,İstanbul,60,1,IT,2
+8,32.0,6200.0,Ankara,48,4,Muhasebe,4
+9,,7500.0,İzmir,35,2,Pazarlama,6
+10,45.0,9000.0,İstanbul,70,5,IT,15
+11,29.0,4000.0,Bursa,39,4,İnsan Kaynakları,3
+12,38.0,5200.0,Adana,44,3,Operasyon,8
+13,41.0,5600.0,Trabzon,52,4,Satış,9
+14,,6800.0,Eskişehir,41,5,Ar-Ge,5
+15,36.0,7100.0,Gaziantep,53,3,Üretim,6
+16,27.0,4300.0,Konya,47,2,Lojistik,2
+17,34.0,3900.0,Antalya,49,4,Finans,11
+18,42.0,4700.0,Mersin,46,5,Satın Alma,14
+19,31.0,,Kayseri,50,1,Kalite,4
+20,,8800.0,Diyarbakır,65,3,Hukuk,13
