@@ -1,0 +1,128 @@
+# Miniconda Kurulum Rehberi
+
+Miniconda, Python ve conda paket yöneticisini içeren hafif bir dağıtımdır. Windows, macOS ve Linux işletim sistemlerinde Miniconda'yı nasıl kuracağınızı bu rehberde bulabilirsiniz.
+
+## 1. Windows için Miniconda Kurulumu
+
+### 📥 Adım 1: Miniconda Yükleyicisini İndirme
+
+- [Miniconda İndirme Sayfası](https://docs.conda.io/en/latest/miniconda.html) adresine gidin.
+- İşletim sisteminize uygun olan **Miniconda Windows Installer**'ı indirin (64-bit önerilir).
+
+### 🛠️ Adım 2: Miniconda’yı Kurma
+
+1. İndirilen `.exe` dosyasını çalıştırın.
+2. Lisans sözleşmesini kabul edin.
+3. "Just Me" seçeneğini işaretleyin ve **Next** butonuna tıklayın.
+4. Kurulum dizinini seçin (varsayılan dizin önerilir).
+5. **"Add Miniconda3 to my PATH environment variable"** seçeneğini **işaretleyin** (Bu adım isteğe bağlıdır, ancak conda’yı komut satırından kullanmayı kolaylaştırır).
+6. **"Register Miniconda3 as the default Python"** seçeneğini **işaretleyebilirsiniz** (varsayılan Python olarak ayarlanmasını sağlar).
+7. **Install** butonuna tıklayarak kurulumu tamamlayın.
+
+### ✅ Adım 3: Miniconda’yı Doğrulama
+
+Kurulumu doğrulamak için Komut İstemi'ni açın ve aşağıdaki komutları çalıştırın:
+
+```sh
+conda --version
+python --version
+```
+
+Bu komutlar, conda ve Python'un doğru yüklendiğini gösteren sürüm numaralarını yazdırmalıdır.
+
+---
+
+## 2. macOS için Miniconda Kurulumu
+
+### 📥 Adım 1: Miniconda Yükleyicisini İndirme
+
+- [Miniconda İndirme Sayfası](https://docs.conda.io/en/latest/miniconda.html) üzerinden **macOS (Intel veya Apple Silicon)** için uygun sürümü indirin.
+- `.pkg` veya `.sh` uzantılı yükleyiciyi seçin.
+
+### 🛠️ Adım 2: Terminal Üzerinden Kurulum
+
+- `.sh` dosyası indirdiyseniz Terminal'i açıp aşağıdaki komutu çalıştırın:
+
+```sh
+bash Miniconda3-latest-MacOSX-x86_64.sh  # Intel için
+bash Miniconda3-latest-MacOSX-arm64.sh  # Apple Silicon için
+```
+
+- Lisans sözleşmesini onaylayın (`yes` yazıp Enter'a basın).
+- Kurulum dizini seçin (varsayılan önerilir).
+- `conda init` komutunu çalıştırarak Miniconda’yı kabuk ortamınıza entegre edin.
+
+### ✅ Adım 3: Miniconda’yı Doğrulama
+
+Terminal’de aşağıdaki komutları çalıştırın:
+
+```sh
+conda --version
+python --version
+```
+
+Eğer sürüm bilgilerini görüyorsanız kurulum başarılıdır.
+
+---
+
+## 3. Linux için Miniconda Kurulumu
+
+### 📥 Adım 1: Miniconda Yükleyicisini İndirme
+
+- [Miniconda İndirme Sayfası](https://docs.conda.io/en/latest/miniconda.html) üzerinden **Linux** için uygun sürümü indirin.
+- Genellikle `.sh` uzantılı yükleyici tercih edilir.
+
+### 🛠️ Adım 2: Terminal Üzerinden Kurulum
+
+İndirilen dosyanın bulunduğu dizine gidip şu komutu çalıştırın:
+
+```sh
+bash Miniconda3-latest-Linux-x86_64.sh
+```
+
+- Lisans sözleşmesini kabul etmek için `yes` yazın.
+- Kurulum dizinini seçin (varsayılan önerilir).
+- `conda init` komutunu çalıştırarak Miniconda’yı kabuk ortamınıza entegre edin.
+
+### ✅ Adım 3: Miniconda’yı Doğrulama
+
+Kurulumu doğrulamak için aşağıdaki komutları çalıştırın:
+
+```sh
+conda --version
+python --version
+```
+
+---
+
+## 4. PATH Ayarları ve Ekstra Yapılandırmalar
+
+### 🛠️ PATH Değişkenini Manuel Olarak Ayarlama
+
+Eğer `conda` komutu çalışmıyorsa, Miniconda’nın yüklü olduğu dizini PATH değişkenine ekleyin.
+
+**Windows:**
+
+- `C:\Users\<kullanıcı_adınız>\Miniconda3\Scripts` dizinini `PATH` değişkenine ekleyin.
+
+**macOS/Linux:** Terminal’de aşağıdaki komutu çalıştırarak `~/.bashrc` veya `~/.zshrc` dosyanıza Miniconda'nın yolunu ekleyin:
+
+```sh
+echo 'export PATH="~/miniconda3/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+### 🔄 Conda'yı Güncelleme
+
+Kurulumu tamamladıktan sonra en son sürüme güncellemek için:
+
+```sh
+conda update conda
+```
+
+Bu komut, Miniconda'yı ve paket yöneticisini günceller.
+
+---
+
+Bu rehber sayesinde Windows, macOS ve Linux sistemlerinizde Miniconda'yı kolayca kurabilir ve kullanabilirsiniz. 🚀
+
