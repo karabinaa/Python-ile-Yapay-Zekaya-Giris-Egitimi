@@ -158,11 +158,6 @@ conda activate oyk25
 conda install numpy pandas scikit-learn matplotlib keras jupyter
 ```
 
-### ✅ Adım 3: Jupyter Notebook’u Başlatma
-
-```sh
-jupyter notebook
-```
 
 
 
